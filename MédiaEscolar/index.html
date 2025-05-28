@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Média Escolar</title>
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="image.svg" alt="image">
+        </section>
+
+        <section id="calculator">
+            <h1>Média Escolar</h1>
+            <form id="mediaForm">
+                <div class="input-box">
+                    <label for="nota1">Nota 1 - Primeiro Semestre:</label>
+                    <input type="number" id="nota1" required>
+                </div>
+                <div class="input-box">
+                    <label for="nota2">Nota 2 - Segundo Semestre:</label>
+                    <input type="number" id="nota2" required>
+                </div>
+                <button id="calculate" type="submit">Calcular Média</button>
+
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="mediaFinal">
+                        <span id="value"></span>
+                            <span>Sua Média: </span>
+                    </div>
+                        <div id="description">
+                            <span></span>
+                        </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

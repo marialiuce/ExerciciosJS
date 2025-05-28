@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #bba8a8;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#img img{
+    width: 32rem
+}
+#img img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;    background-color: #b49292;
+    border-radius: 8px;
+}
+
+#calculator h1 {
+    font-size: 2.25rem;
+    position: relative;
+}
+
+#calculator h1::after {
+    position: absolute;
+    content: '';
+    background-color: #6962ea;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-box label{
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4a2b34;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+#calculate{
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #6962ea;
+    color: #fff;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#result{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding: 0.75rem 0;
+}
+
+#mediaFinal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+#mediaFinal span:last-child {
+    font-size: 0.900rem;
+    color: #333;
+}
+
+#description {
+    width: 15.5rem
+}
+
+.hidden {
+    display: none;
+}
+
+.aproved {
+    color:rgb(82, 226, 178);
+}
+
+.reproved{
+    color: rgb(236, 56, 56);
+}
