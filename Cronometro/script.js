@@ -48,7 +48,7 @@ const resetTimer = () => {
     setTimer(timer);
     marksList.innerHTML = '';
     const button = document.getElementById('power');
-    button.getAttribute('action', 'start');
+    button.setAttribute('action', 'start');
     button.innerHTML = '<i class="fa-solid fa-play"></i>';
 }
 

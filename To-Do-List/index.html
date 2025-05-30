@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <form id="form">
+            <input type="text" id="taskInput" placeholder="Digite uma tarefa..." required>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+        <ul id="taskList"></ul>
+        <div id="taskCount">
+            <p>Total de Tarefas: <span id="count">0</span></p>
+            <p>Tarefas Concluídas: <span id="completed">0</span></p>
+        </div>
+    </div>
+</body>
+</html>
