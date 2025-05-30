@@ -40,7 +40,6 @@ const toggerlTimer = () => {
         button.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 }
-
 const resetTimer = () => {
     clearInterval(intervalId);
     timer = 0;
